@@ -22,6 +22,7 @@ const { transform } = require('charmap')
 transform('ظ') // th
 transform('é') // e
 transform('<') // less
+transform('tôi tên là đức tạ') // toi ten la duc ta
 ```
 
 ## Contribution Guidelines
