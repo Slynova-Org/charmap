@@ -19,4 +19,8 @@ test.group('Transform', () => {
     assert.equal(transform('®'), '(r)')
     assert.equal(transform('<'), 'less')
   })
+
+  test('should transform a sentence', (assert) => {
+    assert.equal(transform('tôi tên là đức tạ'), 'toi ten la duc ta')
+  })
 })
