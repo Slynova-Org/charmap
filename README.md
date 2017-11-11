@@ -1,5 +1,7 @@
 # Charmap Lookup Table
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Slynova-Org/charmap.svg)](https://greenkeeper.io/)
+
 Inspired by [Django Urlify](https://github.com/django/django) and [node-slug](https://github.com/dodo/node-slug).
 
 ---
