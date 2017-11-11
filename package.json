@@ -1,0 +1,25 @@
+{
+  "name": "charmap",
+  "description": "ASCII Charmap lookup table",
+  "version": "1.0.0",
+  "author": "Romain Lanz <romain.lanz@slynova.ch>",
+  "license": "MIT",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Slynova-Org/charmap"
+  },
+  "bugs": {
+    "url": "https://github.com/Slynova-Org/charmap/issues"
+  },
+  "scripts": {
+    "test": "npm run test:coverage",
+    "test:local": "japa",
+    "test:coverage": "nyc npm run test:local"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "japa": "^1.0.5",
+    "nyc": "^11.3.0"
+  }
+}
