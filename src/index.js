@@ -7,7 +7,7 @@
  * @copyright Slynova - Romain Lanz <romain.lanz@slynova.ch>
  */
 
-const latin = {
+var latin = {
   'À': 'A', 'Á': 'A', 'Â': 'A', 'Ã': 'A', 'Ä': 'A', 'Å': 'A', 'Æ': 'AE',
   'Ç': 'C', 'È': 'E', 'É': 'E', 'Ê': 'E', 'Ë': 'E', 'Ì': 'I', 'Í': 'I',
   'Î': 'I', 'Ï': 'I', 'Ð': 'D', 'Ñ': 'N', 'Ò': 'O', 'Ó': 'O', 'Ô': 'O',
@@ -20,7 +20,7 @@ const latin = {
   'ű': 'u', 'ý': 'y', 'þ': 'th', 'ÿ': 'y',
 }
 
-const latinSymbols = {
+var latinSymbols = {
   '©': '(c)', 'œ': 'oe', 'Œ': 'OE', '∑': 'sum', '®': '(r)', '†': '+',
   '“': '"', '”': '"', '‘': "'", '’': "'", '∂': 'd', 'ƒ': 'f', '™': 'tm',
   '℠': 'sm', '…': '...', '˚': 'o', 'º': 'o', 'ª': 'a', '•': '*',
@@ -28,7 +28,7 @@ const latinSymbols = {
   '<': 'less', '>': 'greater', '@': 'at',
 }
 
-const greek = {
+var greek = {
   'α': 'a', 'β': 'b', 'γ': 'g', 'δ': 'd', 'ε': 'e', 'ζ': 'z', 'η': 'h',
   'θ': '8', 'ι': 'i', 'κ': 'k', 'λ': 'l', 'μ': 'm', 'ν': 'n', 'ξ': '3',
   'ο': 'o', 'π': 'p', 'ρ': 'r', 'σ': 's', 'τ': 't', 'υ': 'y', 'φ': 'f',
@@ -41,17 +41,17 @@ const greek = {
   'Ό': 'O', 'Ύ': 'Y', 'Ή': 'H', 'Ώ': 'W', 'Ϊ': 'I', 'Ϋ': 'Y',
 }
 
-const turkish = {
+var turkish = {
   'ş': 's', 'Ş': 'S', 'ı': 'i', 'İ': 'I', 'ç': 'c', 'Ç': 'C', 'ü': 'u',
   'Ü': 'U', 'ö': 'o', 'Ö': 'O', 'ğ': 'g', 'Ğ': 'G',
 }
 
-const romanian = {
+var romanian = {
   'ă': 'a', 'î': 'i', 'ș': 's', 'ț': 't', 'â': 'a',
   'Ă': 'A', 'Î': 'I', 'Ș': 'S', 'Ț': 'T', 'Â': 'A',
 }
 
-const russian = {
+var russian = {
   'а': 'a', 'б': 'b', 'в': 'v', 'г': 'g', 'д': 'd', 'е': 'e', 'ё': 'yo',
   'ж': 'zh', 'з': 'z', 'и': 'i', 'й': 'j', 'к': 'k', 'л': 'l', 'м': 'm',
   'н': 'n', 'о': 'o', 'п': 'p', 'р': 'r', 'с': 's', 'т': 't', 'у': 'u',
@@ -64,18 +64,18 @@ const russian = {
   'Ы': 'Y', 'Ь': '', 'Э': 'E', 'Ю': 'Yu', 'Я': 'Ya',
 }
 
-const ukrainian = {
+var ukrainian = {
   'Є': 'Ye', 'І': 'I', 'Ї': 'Yi', 'Ґ': 'G', 'є': 'ye', 'і': 'i',
   'ї': 'yi', 'ґ': 'g',
 }
 
-const czech = {
+var czech = {
   'č': 'c', 'ď': 'd', 'ě': 'e', 'ň': 'n', 'ř': 'r', 'š': 's', 'ť': 't',
   'ů': 'u', 'ž': 'z', 'Č': 'C', 'Ď': 'D', 'Ě': 'E', 'Ň': 'N', 'Ř': 'R',
   'Š': 'S', 'Ť': 'T', 'Ů': 'U', 'Ž': 'Z',
 }
 
-const slovak = {
+var slovak = {
   'á': 'a', 'ä': 'a', 'č': 'c', 'ď': 'd', 'é': 'e', 'í': 'i', 'ľ': 'l',
   'ĺ': 'l', 'ň': 'n', 'ó': 'o', 'ô': 'o', 'ŕ': 'r', 'š': 's', 'ť': 't',
   'ú': 'u', 'ý': 'y', 'ž': 'z',
@@ -84,46 +84,46 @@ const slovak = {
   'Ú': 'U', 'Ý': 'Y', 'Ž': 'Z',
 }
 
-const polish = {
+var polish = {
   'ą': 'a', 'ć': 'c', 'ę': 'e', 'ł': 'l', 'ń': 'n', 'ó': 'o', 'ś': 's',
   'ź': 'z', 'ż': 'z',
   'Ą': 'A', 'Ć': 'C', 'Ę': 'E', 'Ł': 'L', 'Ń': 'N', 'Ó': 'O', 'Ś': 'S',
   'Ź': 'Z', 'Ż': 'Z',
 }
 
-const latvian = {
+var latvian = {
   'ā': 'a', 'č': 'c', 'ē': 'e', 'ģ': 'g', 'ī': 'i', 'ķ': 'k', 'ļ': 'l',
   'ņ': 'n', 'š': 's', 'ū': 'u', 'ž': 'z',
   'Ā': 'A', 'Č': 'C', 'Ē': 'E', 'Ģ': 'G', 'Ī': 'I', 'Ķ': 'K', 'Ļ': 'L',
   'Ņ': 'N', 'Š': 'S', 'Ū': 'U', 'Ž': 'Z',
 }
 
-const arabic = {
+var arabic = {
   'أ': 'a', 'ب': 'b', 'ت': 't', 'ث': 'th', 'ج': 'g', 'ح': 'h', 'خ': 'kh', 'د': 'd',
   'ذ': 'th', 'ر': 'r', 'ز': 'z', 'س': 's', 'ش': 'sh', 'ص': 's', 'ض': 'd', 'ط': 't',
   'ظ': 'th', 'ع': 'aa', 'غ': 'gh', 'ف': 'f', 'ق': 'k', 'ك': 'k', 'ل': 'l', 'م': 'm',
   'ن': 'n', 'ه': 'h', 'و': 'o', 'ي': 'y',
 }
 
-const lithuanian = {
+var lithuanian = {
   'ą': 'a', 'č': 'c', 'ę': 'e', 'ė': 'e', 'į': 'i', 'š': 's', 'ų': 'u',
   'ū': 'u', 'ž': 'z',
   'Ą': 'A', 'Č': 'C', 'Ę': 'E', 'Ė': 'E', 'Į': 'I', 'Š': 'S', 'Ų': 'U',
   'Ū': 'U', 'Ž': 'Z',
 }
 
-const serbian = {
+var serbian = {
   'ђ': 'dj', 'ј': 'j', 'љ': 'lj', 'њ': 'nj', 'ћ': 'c', 'џ': 'dz',
   'đ': 'dj', 'Ђ': 'Dj', 'Ј': 'j', 'Љ': 'Lj', 'Њ': 'Nj', 'Ћ': 'C',
   'Џ': 'Dz', 'Đ': 'Dj',
 }
 
-const azerbaijani = {
+var azerbaijani = {
   'ç': 'c', 'ə': 'e', 'ğ': 'g', 'ı': 'i', 'ö': 'o', 'ş': 's', 'ü': 'u',
   'Ç': 'C', 'Ə': 'E', 'Ğ': 'G', 'İ': 'I', 'Ö': 'O', 'Ş': 'S', 'Ü': 'U',
 }
 
-const georgian = {
+var georgian = {
   'ა': 'a', 'ბ': 'b', 'გ': 'g', 'დ': 'd', 'ე': 'e', 'ვ': 'v', 'ზ': 'z',
   'თ': 't', 'ი': 'i', 'კ': 'k', 'ლ': 'l', 'მ': 'm', 'ნ': 'n', 'ო': 'o',
   'პ': 'p', 'ჟ': 'j', 'რ': 'r', 'ს': 's', 'ტ': 't', 'უ': 'u', 'ფ': 'f',
@@ -131,7 +131,7 @@ const georgian = {
   'წ': 'w', 'ჭ': 'ch', 'ხ': 'x', 'ჯ': 'j', 'ჰ': 'h',
 }
 
-const vietnamese = {
+var vietnamese = {
   'Ạ': 'A', 'Ả': 'A', 'Ầ': 'A', 'Ấ': 'A', 'Ậ': 'A', 'Ẩ': 'A', 'Ẫ': 'A',
   'Ằ': 'A', 'Ắ': 'A', 'Ặ': 'A', 'Ẳ': 'A', 'Ẵ': 'A', 'Ẹ': 'E', 'Ẻ': 'E',
   'Ẽ': 'E', 'Ề': 'E', 'Ế': 'E', 'Ệ': 'E', 'Ể': 'E', 'Ễ': 'E', 'Ị': 'I',
@@ -149,7 +149,7 @@ const vietnamese = {
   'ỹ': 'y', 'đ': 'd',
 }
 
-const currency = {
+var currency = {
   '€': 'euro', '₢': 'cruzeiro', '₣': 'french franc', '£': 'pound',
   '₤': 'lira', '₥': 'mill', '₦': 'naira', '₧': 'peseta', '₨': 'rupee',
   '₩': 'won', '₪': 'new shequel', '₫': 'dong', '₭': 'kip', '₮': 'tugrik',
@@ -159,7 +159,7 @@ const currency = {
   '$': 'dollar', '₹': 'indian rupee',
 }
 
-const charmap = Object.assign(
+var charmap = Object.assign(
   latin, latinSymbols,
   greek,
   turkish,
@@ -184,10 +184,10 @@ function transform (text = null) {
     return ''
   }
 
-  let result = ''
+  var result = ''
 
   for (let i = 0; i < text.length; i++) {
-    const char = text[i]
+    var char = text[i]
     result += charmap[char] !== void 0 ? charmap[char] : char
   }
 
