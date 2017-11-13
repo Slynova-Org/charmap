@@ -25,7 +25,7 @@ const latinSymbols = {
   '“': '"', '”': '"', '‘': "'", '’': "'", '∂': 'd', 'ƒ': 'f', '™': 'tm',
   '℠': 'sm', '…': '...', '˚': 'o', 'º': 'o', 'ª': 'a', '•': '*',
   '∆': 'delta', '∞': 'infinity', '♥': 'love', '&': 'and', '|': 'or',
-  '<': 'less', '>': 'greater',
+  '<': 'less', '>': 'greater', '@': 'at',
 }
 
 const greek = {
