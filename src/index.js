@@ -179,8 +179,8 @@ var charmap = Object.assign(
   currency
 )
 
-function transform (text = null) {
-  if (text === null) {
+function transform (text) {
+  if (text === void 0) {
     return ''
   }
 
