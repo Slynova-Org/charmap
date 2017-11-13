@@ -180,9 +180,7 @@ var charmap = Object.assign(
 )
 
 function transform (text) {
-  if (text === void 0) {
-    return ''
-  }
+  if (text === void 0) { return '' }
 
   var result = ''
 
@@ -194,4 +192,7 @@ function transform (text) {
   return result
 }
 
-module.exports = { transform, charmap }
+module.exports = {
+  transform: transform,
+  charmap: charmap,
+}
