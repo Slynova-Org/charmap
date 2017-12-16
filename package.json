@@ -20,6 +20,7 @@
   "dependencies": {},
   "devDependencies": {
     "japa": "^1.0.5",
+    "japa-cli": "^1.0.1",
     "nyc": "^11.3.0"
   }
 }
