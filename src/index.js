@@ -7,6 +7,8 @@
  * @copyright Slynova - Romain Lanz <romain.lanz@slynova.ch>
  */
 
+var assignFn = require('es6-object-assign').assign
+
 var latin = {
   'À': 'A', 'Á': 'A', 'Â': 'A', 'Ã': 'A', 'Ä': 'A', 'Å': 'A', 'Æ': 'AE',
   'Ç': 'C', 'È': 'E', 'É': 'E', 'Ê': 'E', 'Ë': 'E', 'Ì': 'I', 'Í': 'I',
@@ -159,7 +161,7 @@ var currency = {
   '$': 'dollar', '₹': 'indian rupee',
 }
 
-var charmap = Object.assign(
+var charmap = assignFn(
   latin, latinSymbols,
   greek,
   turkish,
