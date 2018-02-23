@@ -194,7 +194,13 @@ function transform (text) {
   return result
 }
 
+transform.extends = function (customMap) {
+  assignFn(
+    charmap,
+    customMap
+  )
+}
+
 module.exports = {
   transform: transform,
-  charmap: charmap,
 }

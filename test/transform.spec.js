@@ -23,4 +23,9 @@ test.group('Transform', () => {
   test('should transform a sentence', (assert) => {
     assert.equal(transform('tôi tên là đức tạ'), 'toi ten la duc ta')
   })
+
+  test('should let us extends the char map', (assert) => {
+    transform.extends({ '☢': 'radioactive' })
+    assert.equal(transform('unicode ♥ is ☢'), 'unicode love is radioactive')
+  })
 })
