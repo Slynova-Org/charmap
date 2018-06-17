@@ -186,7 +186,7 @@ function transform (text) {
 
   var result = ''
 
-  for (let i = 0; i < text.length; i++) {
+  for (var i = 0; i < text.length; i++) {
     var char = text[i]
     result += charmap[char] !== void 0 ? charmap[char] : char
   }
